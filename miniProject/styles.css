@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 84%;
+    margin: 0 auto;
+}
+body{
+    color: #3A3845;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background: #C69B7B;
+    position: fixed;
+    height: 5rem;
+
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem ;
+    width: 100vw;
+}
+
+ul li  {
+   list-style: none; 
+ 
+}
+
+a{
+    text-decoration: none;
+    color: #3A3845;
+}
+.nav__item{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn{
+    color:white ;
+    background: #3A3845;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid #3A3845;
+    color: white;
+}
+
+.getStarted{
+    color:white ;
+    background: #3A3845;
+    padding: 0.9rem;
+}
+
+.home__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem;
+}
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero__text p{
+    font-size: 0.9rem;
+    width: 80%;
+}
+
+.hero__subscribe{
+    display: flex;
+    align-items: center;
+   padding-top: 2rem;
+}
+
+.hero__subscribe input{
+    padding: 1rem ;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__container h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.about__container p{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.about__summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.testimonials__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.testimonials__container h1{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.testimonials__container .myp{
+    text-align: center;
+    width: 70%;
+    margin-bottom: 3rem;
+
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonials__list{
+    display: flex;
+    /* place-items: center; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    
+}
+.client__info{
+    display: flex;
+    flex-direction: column;
+}
+.testimonial__logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.testimonial:hover{
+    cursor: pointer;
+    background:#eee ;
+    padding: 1.5rem;
+}
+
+footer{
+    background: #C69B7B;
+    width: 100vw;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+}

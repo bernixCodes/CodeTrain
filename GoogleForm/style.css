@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgba(142, 200, 241,0.3);
+}
+
+.main__content{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.design{
+    height: 0.8rem;
+    border-radius: 1rem 1rem 0 0;
+    background: blue;
+    margin-top: 2rem;
+
+}
+.info__section{
+    background: white;
+    height: 15rem;
+    border-radius:0 0 1rem 1rem;
+    padding: 2rem;
+}
+
+.info__section h1{
+ font-weight: 300;
+}
+.text{
+    margin: 1rem 0;
+    line-height: 1.1rem;
+
+}
+.rule{
+    border-top: 2px solid gray;
+}
+.info__sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.email__section{
+    background: white;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.header__text{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.default__input-style{
+    margin-top: 3rem;
+    outline: none;
+    border: transparent;
+    border-bottom: 2px solid gray;
+    width: 50%;
+}
+
+.default__input-style:focus{
+    border-bottom: 2px solid blue;
+}
+
+.sub__text{
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+::placeholder{
+    font-size: 1rem;
+}
+
+.nok__section{
+    background: white;
+    height: 12rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.radio__style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+input[type="radio"]{
+  width: 1.3rem;
+  height: 1.2rem;
+}
+
+.fees__section{
+    background: white;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.fees__section p{
+    margin-bottom: 20px;
+}
+
+.radio_1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.who__section{
+    background: white;
+    height: 14rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.extended__input-style{
+    margin-top: 3rem;
+    outline: none;
+    border: transparent;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+
+.extended__input-style:focus{
+    border-bottom: 2px solid blue;
+}
+
+.footer{
+    margin: 3rem 0;
+}
+
+.footer__info{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    background: blue;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.img__load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__policy{
+    display: flex;
+    padding: 2rem;
+}
+
+.footer__policy a{
+    color: gray;
+}
+
+.logo__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benyx Diaries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="text-blue-500">
+    <!-- header section -->
+    <div class="bg-blue-50 px-20 pb-20">
+        <nav class="flex justify-between items-center pt-5 ">
+                <h3 class="cursor-pointer text-lg" >Bernix Diaries</h3>
+                <ul class=" hidden md:flex  md:gap-10 ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="flex items-center justify-center gap-1">Products <i class="material-icons">keyboard_arrow_down</i></a></li>
+                    <li><a href="#" class="flex items-center justify-center gap-1">Resources <i class="material-icons">keyboard_arrow_down</i></a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <div class="flex gap-5">
+                    <button>Login</button>
+                    <button class="bg-blue-600 text-white p-3 rounded-lg">Sign up</button>
+                </div>
+            
+        </nav>
+
+        <div class="mt-20" >
+            <h4>Resources</h4>
+            <h1 class="text-blue-900 font-bold text-5xl py-5">Bernyx blog</h1>
+            <p>Tools and strategies modern teams need to help their companies grow.</p>
+
+            <div class="mt-5 flex gap-3 ">
+                <input type="email" placeholder="Enter your email" class="md:w-3/12 px-5 rounded placeholder:text-blue-500 focus:outline-none w-full" />
+                <button class="bg-blue-600 text-white p-3 rounded-lg">Subscribe</button>
+            </div>
+            <p class="m-5">We care about your data in our <span class="underline cursor-pointer">privacy policy.</span></p>
+
+        </div>
+    </div>  
+ 
+    <!-- main content -->
+    <div class="grid grid-flow-col  px-20 py-10">
+        <div class="md:mr-20  md:block hidden">
+            <div class="flex items-center p-1.5 rounded-lg gap-2 border-2 border-blue-500">
+                <i class="material-icons text-lg">search</i>
+                <input type="text" placeholder="Search" class="placeholder:text-blue-500 font-light focus:outline-none "/>
+            </div>
+            <div class="flex flex-col ">
+                <h3 class="font-semibold py-3 cursor-pointer">Blog categories</h3>
+                <ul class="flex flex-col ">
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">View all</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Design</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Product</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Software Development</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Customer Success</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Leadership</li>
+                    <li class="hover:bg-blue-100 py-3 px-2 rounded font-medium">Management</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-span-6">
+           <div class="md:flex md:flex-row md:flex-wrap md:gap-10 my-0 mx-auto">
+            <div class="relative cursor-pointer" >
+                <img src="./img/blog1.jpg" class="w-80 h-80"/>
+                <div class="flex absolute gap-40 py-60 text-white p-5 top-0 ">
+                    <author >
+                        <p>Ann Billy</p>
+                        <small>20 Jun 2019</small>
+                    </author>
+                    <p>Design</p>
+                </div>
+                <div class="w-80">
+                    <h2  class="text-blue-900 font-semibold text-2xl py-5">UX review presentations</h2>
+                    <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+                    <div class="flex items-center mt-3 gap-2">
+                        <a href="#">  Read post</a>
+                        <i class="material-icons text-sm">call_made</i>
+                    </div>
+                </div>
+           </div>
+           <div class="relative cursor-pointer">
+            <img src="./img/blog2.jpg" class="w-80 h-80"/>
+            <div class="flex absolute gap-40 py-60 text-white p-5 top-0 justify-evenly">
+                <author >
+                    <p>Ann Billy</p>
+                    <small>20 Jun 2019</small>
+                </author>
+                <p>Design</p>
+            </div>
+            <div class="w-80">
+                <h2  class="text-blue-900 font-semibold text-2xl py-5">UX review presentations</h2>
+                <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+                <div  class="flex items-center mt-3 gap-2">
+                    <a href="#">  Read post</a>
+                    <i class="material-icons text-sm">call_made</i>
+                </div>
+            </div>
+           </div>
+           <div class="relative cursor-pointer">
+        <img src="./img/blog3.jpg" class="w-80 h-80"/>
+        <div class="flex absolute gap-40 py-60 text-white p-5 top-0 justify-evenly">
+            <author >
+                <p>Ann Billy</p>
+                <small>20 Jun 2019</small>
+            </author>
+            <p>Design</p>
+        </div>
+        <div class="w-80">
+            <h2  class="text-blue-900 font-semibold text-2xl py-5">UX review presentations</h2>
+            <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+            <div  class="flex items-center mt-3 gap-2">
+                <a href="#">  Read post</a>
+                <i class="material-icons text-sm">call_made</i>
+            </div>
+        </div>
+           </div>
+           <div class="relative cursor-pointer">
+            <img src="./img/blog4.jpg" class="w-80 h-80"/>
+            <div class="flex absolute gap-40 py-60 text-white p-5 top-0 justify-evenly">
+                <author >
+                    <p>Ann Billy</p>
+                    <small>20 Jun 2019</small>
+                </author>
+                <p>Design</p>
+            </div>
+            <div class="w-80">
+                <h2 class="text-blue-900 font-semibold text-2xl py-5">UX review presentations</h2>
+                <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+                <div  class="flex items-center mt-3 gap-2">
+                    <a href="#">  Read post</a>
+                    <i class="material-icons text-sm">call_made</i>
+                </div>
+            </div>
+               </div>
+               <div class="relative cursor-pointer">
+                <img src="./img/blog5.jpg" class="w-80 h-80"/>
+                <div class="flex absolute gap-40 py-60 text-white p-5 top-0 justify-evenly">
+                    <author >
+                        <p>Ann Billy</p>
+                        <small>20 Jun 2019</small>
+                    </author>
+                    <p>Design</p>
+                </div>
+                <div class="w-80">
+                    <h2  class="text-blue-900 font-bold text-2xl py-5">UX review presentations</h2>
+                    <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+                    <div  class="flex items-center mt-3 gap-2">
+                        <a href="#">  Read post</a>
+                        <i class="material-icons text-sm">call_made</i>
+                    </div>
+                </div>
+                   </div>
+                   <div class="relative cursor-pointer">
+                    <img src="./img/blog6.jpg" class="w-80 h-80"/>
+                    <div class="flex absolute gap-40 py-60 text-white p-5 top-0 justify-evenly">
+                        <author >
+                            <p>Ann Billy</p>
+                            <small>20 Jun 2019</small>
+                        </author>
+                        <p>Design</p>
+                    </div>
+                    <div class="w-80">
+                        <h2  class="text-blue-900 font-semibold text-2xl py-5">UX review presentations</h2>
+                        <p>How do you create competing presentations that wow your colleagues and impress your managers?</p>
+                        <div  class="flex items-center mt-3 gap-2">
+                            <a href="#">  Read post</a>
+                            <i class="material-icons text-sm">call_made</i>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="flex justify-end my-10">
+                <button class="bg-blue-600 text-white p-2 px-3 rounded cursor-pointer">View all posts</button>
+           </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-blue-600 text-white py-24 flex flex-col items-center">
+        <h2 class="font-bold text-3xl mb-2 ">Sign up for our newsletter</h2>
+        <p >Be the first to know about our releases and industry news and insights!</p>
+        <div class="mt-5 flex gap-3 ">
+            <input type="email" placeholder="Enter your email" class="w-full px-5 rounded placeholder:text-blue-500 focus:outline-none " />
+            <button class="bg-blue-500 text-white p-3 rounded">Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>

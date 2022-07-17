@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title="Free Online Appointment">Calendly</title>
+    <link rel="icon" href="https://assets-marketing-site.calendly.com/favicon-32x32.png?v=562a6280871383fd65846bc6297cf964"/>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+     <!--Navigation-->
+     <div class="sticky top-0 z-50 bg-white ">
+        <nav class="flex md:justify-around justify-between items-center p-5 ">
+  <img src="./img/calendly.svg" class="w-36 md:block hidden"/>
+  <img class="md:hidden block w-16 h-16" src="https://assets-marketing-site.calendly.com/favicon-32x32.png?v=562a6280871383fd65846bc6297cf964"/>
+
+  <div class="flex">
+      <ul class="md:flex font-medium gap-10 md:gap-5 lg:cursor-pointer hidden ">
+          <li class="hover:text-blue-400">Individuals</li>
+          <li class="hover:text-blue-400">Teams</li>
+          <li class="hover:text-blue-400">Enterprise</li>
+          <li class="hover:text-blue-400" id="showModal">
+              <div class="flex items-center gap-1">
+                  <h1>Product</h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" class=" w-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+              </div>
+          </li>
+          <li class="hover:text-blue-400">Pricing</li>
+          <li class="hover:text-blue-400" id="showResourceModal">
+              <div class="flex items-center gap-1">
+                  <h1>Resources</h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <div class="flex items-center font-medium gap-5">
+     <div>
+       <p class="hover:text-blue-400 cursor-pointer lg:block hidden">Log In</p>
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+     </div>
+      <button class="md:px-5 md:py-3 p-3 bg-blue-600 text-white rounded-full hover:bg-blue-400"> Get started</button>
+  </div>
+       </nav> 
+    </div>
+     <!--Modal-->
+     <dialog id="navModal" class="bg-white z-50">
+        <div class="grid grid-cols-3 mx-auto my-0 " style="width: 1000px;">
+            <div class="bg-gray-200  flex flex-col justify-center items-center gap-5">
+                <h1 class="font-bold -ml-10">Resources</h1>
+                <p class="font-light w-36">More in-depth information about every corner of the Calendly scheduling ecosystem</p>
+            </div>
+            <div class="p-10 flex flex-col gap-10 cursor-pointer">
+                <div>
+                    <img src="./img/modal1.png" class="w-14 "/>
+                    <h class="font-bold">About</h1>
+                    <p class="font-light">Learn about who we are</p>
+                </div>
+                <div>
+                    <img src="./img/modal2.png" class="w-14 "/>
+                    <h1 class="font-bold">Resource Center</h1>
+                    <p class="font-light">Explore all of our resources</p>
+                </div>
+                <div>
+                    <img src="./img/fractal.png" class="w-14 "/>
+                    <h1 class="font-bold">Blog</h1>
+                    <p class="font-light">Thoughts, news, and best practices</p>
+                </div>
+            </div>
+            <div class="p-10 flex flex-col gap-10 cursor-pointer">
+                <div>
+                    <img src="./img/modal1.png" class="w-14 "/>
+                    <h1 class="font-bold">Customer Stories</h1>
+                    <p class="font-light">Hear from our valued customers</p>
+                </div>
+                <div>
+                    <img src="./img/compass.png" class="w-14 "/>
+                    <h1 class="font-bold">Help Center</h1>
+                    <p class="font-light">Explore how to use Calendly</p>
+                </div>
+                <div class="flex flex-col gap-4 cursor-pointer font-bold">
+                   <p>Newsroom</p>
+                   <p>Partner</p>
+                   <p>Developers</p>
+                   <p>Careers</p>
+                </div>
+            </div>
+        </div>
+     </dialog> 
+    <!--Hero session-->
+     <div class="grid md:grid-cols-2 grid-cols-1 lg:m-20 md:m-36 p-5 z-0">
+        <div class="flex flex-col md:items-start  items-center justify-center">
+            <h1 class="md:text-6xl text-5xl font-bold md:w-52 w-full md:leading-snug text-blue-600  md:text-left text-center"><span class="text-blue-900 ">Easy scheduling </span>ahead</h1>
+            <p class="text-2xl font-light md:w-96 md:text-left text-center mt-5">Calendly is your hub for scheduling meetings professionally and efficiently, eliminating the hassle of back-and-forth emails so you get back to work.</p>
+            <div class="border my-3   border-gray-300 shadow-lg rounded-full md:block hidden">
+                <input type="email" class="ml-4 outline-none pl-6 " placeholder="Enter your email"/>
+                <button class="bg-blue-600 text-white p-5 px-10 rounded-full border-2">Sign up</button>
+            </div>
+            <div class="md:hidden flex flex-col gap-5 justify-center items-center">
+                <input type="email" class="mt-3 outline-none p-5 border-gray-300 shadow-lg rounded-full" placeholder="Enter your email"/>
+                <input type="button" class="bg-blue-600 text-white p-5 w-56 rounded-full mt-3 shadow-lg" value="Sign In">
+            </div>
+            <p class="font-light">Create your free account. No credit card required.</p>
+
+        </div>
+        <div class="relative">
+            <img src="./img/new.gif" class="absolute top-20 bg-transparent md:w-52 w-20"/>
+            <img src="./img/hero.svg"/>
+            <img src="./img/twitter.gif" class="w-16 absolute bottom-8 right-24 md:block hidden "/>
+        </div>
+     </div>
+     
+     <!--partners-->
+     <div class="lg:p-20 md:px-36 p-5 flex flex-col items-center justify-center flex-wrap">
+        <h1 class="font-bold text-4xl md:text-left text-center">
+            Simplified scheduling for more than <span class="text-blue-600">10,000,000</span> users worldwide
+        </h1>
+        <div class="flex gap-5 items-center justify-center flex-wrap mt-10">
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/4AUQ47IN6ZBtXtWXt65L3D/0e998b1376e2e3b2fc5489cfa7b3f11c/Zendesk_wordmark__1_.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg"/>
+            <img class="w-20" src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg"/>
+        </div>
+     </div>
+     <!--services-->
+     <div class="lg:p-20 md:px-36 mt-10 p-5 flex flex-col">
+        <h1 class="text-4xl font-bold text-blue-900 text-center ">We make it easy to get started</h1>
+        <div class="flex flex-wrap gap-5 justify-center cursor-pointer p-10 gap-y-10">
+            <div class="shadow-lg p-10 flex flex-col gap-4" style="width: 350px;">
+                <img class="w-10" src="./img/connections.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Create simple rules</h1>
+                <p class="font-light text-xl text-blue-900">Let Calendly know your availability preferences and it'll do the work for you.</p>
+            </div>
+            <div class="shadow-lg p-10 flex flex-col gap-4" style="width: 350px;">
+                <img class="w-10" src="./img/connections.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Share your link</h1>
+                <p class="font-light text-xl text-blue-900">Send guests your Calendly link or embed it on your website.</p>
+            </div>
+            <div class="shadow-lg p-10 flex flex-col gap-4" style="width: 350px;">
+                <img class="w-10" src="./img/connections.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Get booked</h1>
+                <p class="font-light text-xl text-blue-900">They pick a time and the event is added to your calendar.</p>
+            </div>
+        </div>
+     </div>
+     <!--Scheduling-->
+     <div class="lg:p-20 md:px-36 p-5 ">
+        <h1 class="text-5xl font-bold text-blue-900 text-center ">Scheduling for any meeting type</h1>
+        <div class=" p-10 gap-10 gap-y-5 grid md:grid-cols-2 grid-cols-1">
+            <div class="shadow-lg p-10">
+                <img class="w-10" src="./img/group.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">One-on-one</h1>
+                <p class="font-light text-xl text-blue-900">Let your clients and colleagues select open meeting types from your schedule</p>
+            </div>
+            <div class="shadow-lg p-10">
+                <img class="w-10" src="./img/diamond.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Group</h1>
+                <p class="font-light text-xl text-blue-900">Book events for multiple attendees such as webinars and training sessions</p>
+            </div>
+            <div class="shadow-lg p-10">
+                <img class="w-10" src="./img/selfie-stick.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Collective</h1>
+                <p class="font-light text-xl text-blue-900">Schedule across your team’s calendars fr events you co-host with others.</p>
+            </div>
+            <div class="shadow-lg p-10">
+                <img class="w-10" src="./img/responsive.png"/>
+                <h1 class="text-blue-900 text-xl font-bold">Round robin</h1>
+                <p class="font-light text-xl text-blue-900">Balance hosting responsibilities for your team automatically</p>
+            </div>
+        </div>
+     </div>
+     <!--Description-->
+     <div class="p-20 flex flex-col justify-center items-center">
+        <h1 class="md:text-5xl text-4xl text-blue-900 font-bold text-center">Do more of what you do best</h1>
+        <p class="text-2xl font-light text-center p-10">With scheduling hassles and interruptions gone, your day is cleared for accomplishment.</p>
+     </div>
+     <!--Workflow-->
+     <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:m-20 m-5  mb-10 md:text-left text-center">
+        <div class="flex flex-col gap-5">
+            <h1 class="text-blue-600 font-semibold">WORKFLOW MANAGEMENT</h1>
+            <h1 class="text-blue-900 text-4xl">Automate reminders and follow-ups</h1>
+            <p class="text-2xl ">Calendly puts your entire meeting workflow on autopilot, sending everything from reminder emails to thank you notes, so you can focus on the work only you can do. It’s like getting an assistant, even if you’re a business of one.</p>
+        </div>
+        <div>
+            <img src="./img/first.png"/>
+        </div>
+     </div>
+     <!--Connection-->
+     <div class="my-52">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:m-20 m-5 md:text-left text-center">
+            <div>
+                <img src="./img/sec.png"/>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h1 class="text-blue-600 font-semibold">ON-DEMAND SCHEDULING</h1>
+                <h1 class="text-blue-900 text-4xl">Make more connections and reduce cancellations</h1>
+                <p class="text-2xl ">Prospects can schedule meetings in just a few clicks – whenever the moment is right. And cancellations go down because rescheduling is easy, fast, and on their terms.</p>
+            </div>
+         </div>
+     </div>
+      <!--Workflow-->
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-40  gap-10 md:m-20 m-5  mb-10 md:text-left text-center">
+        <div class="flex flex-col gap-5">
+            <h1 class="text-blue-600 font-semibold">THE COURTEOUS APPROACH</h1>
+            <h1 class="text-blue-900 text-4xl">Delight invitees with modern scheduling</h1>
+            <p class="text-2xl ">Time is a precious commodity. Calendly is the courteous way to book meetings and other appointments, because scheduling with just a few clicks makes the most of everyone's time..</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <img src="./img/third.png"/>
+        </div>
+     </div>
+     <!--Try Calendly-->
+     <div class="md:p-20 p-5 flex flex-col justify-center md:items-center">
+        <h1 class="md:text-5xl text-4xl text-blue-900 font-bold text-center">Try Calendly free</h1>
+        <p class="text-2xl font-light md:text-center p-10">After your 14-day trial of our Teams plan, enjoy the Free version of Calendly – forever.</p>
+        <button class="text-white md:px-12 px-8 py-5 mx-10 bg-blue-600 rounded-full">Start for free</button>
+        <p class="text-2xl font-light text-center p-5">To inquire about our Enterprise plans, click 
+            <span class="text-blue-600 cursor-pointer" >here</span>
+            </p>
+     </div>
+     <!--Footer-->
+     <div class="grid grid-cols-6 md:m-32 m-10 font-light text-blue-900">
+        <div class="md:col-span-2 col-span-6 gap-10">
+            <h1 class="text-3xl font-bold text-blue-900 my-5">Easy <br><span class="text-blue-600">ahead</span></h1>
+            <p class="text-xl ">We take the work out of connecting with others so you can accomplish more.
+            </p>
+            <select class="border border-zinc-300 p-3 my-5 outline-none w-full">
+                <option>Espanol</option>
+                <option>English</option>
+                <option>French</option>
+            </select>
+
+            <!--Buttons-->
+            <div class="flex gap-3 cursor-pointer my-5">
+               <div class="flex bg-blue-50 gap-3 px-2 items-center">
+                  <img src="./img/apple.png" class="w-5 h-5"/>
+                  <div class="flex flex-col justify-center ">
+                    <small class="md:block hidden">Download on the</small>
+                    <p class="md:font-medium font-light md:text-left text-center">App Store</p>
+                  </div>
+               </div>
+               <div class="flex bg-blue-50 gap-3 px-2 items-center">
+                <img src="./img/google-play.png" class="w-5 h-5"/>
+                <div class="flex flex-col justify-center ">
+                  <small class=" md:block hidden">Get it on</small>
+                  <p class="md:font-medium font-light md:text-left text-center">Google Play</p>
+                </div>
+             </div>
+            </div>
+
+            <!--Icons-->
+            <div class="md:flex items-center gap-3 hidden">
+                <img src="./img/twitter.png" class="w-7 "/>
+                <img src="./img/facebook.png" class="w-7 "/>
+                <img src="./img/instagram.png" class="w-6 "/>
+                <img src="./img/linkedin.png" class="w-7 "/>
+                <img src="./img/youtube.png" class="w-7 "/>
+            </div>
+        </div>
+        <div class="col-span-4 md:m-20 m-5 flex flex-wrap md:gap-x-16 gap-x-0 gap-y-10  ">
+           <div>
+            <p class="font-bold text-blue-900">About</p>
+            <p class="hover:underline">About Calendly</p>
+            <p class="hover:underline">Contact Sales</p>
+            <p class="hover:underline">Newsroom</p>
+            <p class="hover:underline">Careers</p>
+            <p class="hover:underline">Security</p>
+           </div>
+           <div>
+            <p class="font-bold text-blue-900">Solutions</p>
+            <p class="hover:underline">Customer Success</p>
+            <p class="hover:underline"> Sales</p>
+            <p class="hover:underline">Recruiting</p>
+            <p class="hover:underline">Information Technology</p>
+            <p class="hover:underline">Marketing</p>
+           </div>
+           <div >
+            <p class="font-bold text-blue-900">Popular Features</p>
+            <p class="hover:underline">Embed Calendly</p>
+            <p class="hover:underline" >Availability</p>
+            <p class="hover:underline">Sending Notification</p>
+            <p class="hover:underline">Using Calendly Mobile</p>
+           </div>
+           <div>
+            <p class="font-bold text-blue-900">Support</p>
+            <p class="hover:underline">Help Center</p>
+            <p class="hover:underline">Video Tutorials</p>
+            <p class="hover:underline">Cookie Settings</p>
+           </div>
+           <div>
+            <p class="font-bold text-blue-900">Add-Ons</p>
+            <p class="hover:underline">Download for Chrome</p>
+            <p class="hover:underline">Download for Firefox</p>
+           </div>
+           <div>
+            <p class="font-bold text-blue-900">Developers</p>
+            <p class="hover:underline">Developer Tools</p>
+           </div>
+        </div>
+     </div>
+     <p class="text-center text-blue-900 font-light">Bernyx Assignment </p>
+    <script src="./script.js"></script>
+</body>
+</html>
